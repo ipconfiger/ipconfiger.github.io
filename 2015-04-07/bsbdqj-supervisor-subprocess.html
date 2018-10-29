@@ -13,6 +13,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="http://liming.stayawsome.com/2015-04-07/bsbdqj-supervisor-subprocess.html" />
   <meta property="og:image" content="" />
+  <meta property="og:type" content="过节的时候写了个小东西，主进程用multiprocess开了几个子进程来分发任务给子进程执行，完成后子进程report结果给主进程。为了在主进程死掉后把子进程也干掉，我监听了TERM的信号，然后在收到这个信号后去kill掉所有子进程。看起来ok啦，跑起来也还好，假设这个功能是放在 serv.py 里，python serv.py & 把它放到后台去，再kill 掉，一切都很ok，但是如果用supervisord把这个管理起来的话就出了问题，主进程基本上就没收到TERM的信号." />
   
   <link rel="stylesheet" href="/css/main.css">
 </head>

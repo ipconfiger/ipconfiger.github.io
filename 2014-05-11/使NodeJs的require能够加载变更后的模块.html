@@ -13,6 +13,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="http://liming.stayawsome.com/2014-05-11/使NodeJs的require能够加载变更后的模块.html" />
   <meta property="og:image" content="" />
+  <meta property="og:type" content="起因是这样子的，我打算做个工具，需要能够动态加载外部的模块，由于是跑起来需要比较长时间运行，所以需要能监测文件变更，一旦模块文件改动了就自动重新加载，网上流传的绝大部分心法都是监测文件变动后就重启一遍了事，这类天魔解体似的功法过于霸道，写起来麻烦，动辄涉及进程线程什么的大招，简便点的就是借助外物，比如node superviso之类的要全局安装的依赖，对于一个功能代码一百来行的小工具来说太过于霸道了，所以细查了node的文档后找到了一个比较简单的方法。" />
   
   <link rel="stylesheet" href="/css/main.css">
 </head>
