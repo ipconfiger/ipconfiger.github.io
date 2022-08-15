@@ -30,7 +30,7 @@ twitter_username: ipconfiger
 github_username:  ipconfiger
 
 # Build settings
-theme: Slate
+theme: jekyll-theme-tactile
 plugins:
   - jekyll-feed
 
